@@ -6,7 +6,7 @@ Users can compare metrics from their club with others, such as: book ratings, nu
 
 It adds a competitive element and pushes book club members to be more active and engaging.
 
-This is the frontend where I am using the Vue.ts framework with Vite package. 
+This is the frontend where I am using the Vue.ts framework with TypeScript and the Vite package. 
 
 One of my current projects so stay tuned for screenshots and more!
 
