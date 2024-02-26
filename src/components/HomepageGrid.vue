@@ -31,8 +31,7 @@
 
 @media screen and (max-width: 800px) {
   .homepageGrid {
-    /* display: flex;
-    flex-direction: column; */
+    display: grid;
     grid-template-columns: 1fr 1fr;
     margin-left: 2rem;
   }

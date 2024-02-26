@@ -1,11 +1,9 @@
 <script setup lang="ts">
-import { ref } from 'vue'
-const count = ref(1000)
 </script>
 
 <template>
   <div class="loginCon">
-    <button type="button" @click="count+= 1000">Login</button>
+    <button type="button">Login</button>
   </div>
 </template>
 

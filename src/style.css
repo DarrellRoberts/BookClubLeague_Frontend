@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "Bebas Neue Regular";
+  src: url("/BebasNeue-Regular.ttf");
+}
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -5,17 +10,21 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  --mainColor: red;
+  --textColor: black;
+  --mainFont: "Bebas Neue Regular";
+  background-color: var(--mainColor);
 }
 
 h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+  color: var(--textColor);
+  font-family: var(--mainFont);
 }
 
 button {
