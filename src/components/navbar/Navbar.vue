@@ -1,6 +1,12 @@
 <template>
     <div @click=turnFull v-if=showFull class=navbarFull >
-        <h2>this way</h2>
+        <ul>
+            <router-link to='/'><li>Home</li></router-link>
+            <router-link to='/leaderboard'><li>Leaderboard</li></router-link>
+            <router-link to='/about'><li>About</li></router-link>
+            <li></li>
+            <li></li>
+        </ul>
     </div>
     <div ref="myDiv" @click=turnFull  v-else class=navbarCon >
         <h2>>>></h2>
@@ -12,7 +18,9 @@ import { ref } from "vue";
 
 const showFull = ref(false);
 const turnFull = () => {
-    showFull.value = !showFull.value;}
+    showFull.value = !showFull.value;
+}
+
 </script>
 
 <style>
