@@ -9,6 +9,7 @@
 </template>
 
 <script setup lang="ts">
+import "./style.css"
 import Navbar from './components/navbar/Navbar.vue'
 import Login from './components/login/Login.vue'
 </script>

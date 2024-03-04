@@ -1,33 +1,38 @@
 <template>
-<div v-if="jsonData">
-    <div v-for="dd in jsonData" :key="dd.id">
-        <h1>{{dd?.title}}</h1>
-    </div>
-</div>
-<div v-else>
-    Loading...
+<div class="leaderTitle">
+    <h1>Leaderboard</h1>
+    <LeaderboardTable />
 </div>
 </template>
 
 <script setup>
-import {ref, onMounted} from "vue";
-
-const jsonData = ref(null)
-
-const fetchData = async () => {
-    try {
-    const res = await fetch("https://jsonplaceholder.typicode.com/todos/");
-    const data = await res.json();
-    jsonData.value = data;
-    } catch (error) {
-        console.error(error);
-    }
-}
-
-onMounted(() => {
-    fetchData();
-})
+import LeaderboardTable from "./LeaderboardTable.vue";
 </script>
 
 <style>
+.leaderTitle {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+}
+.leaderTitle h1 {
+  color: var(--mainTextColor);
+  padding: 0px;
+  margin-left: 5rem;
+  margin-top: 5rem;
+  font-size: 8rem;
+  line-height: 8rem;
+  text-shadow: 10px 0px 0px black;
+  letter-spacing: 5px;
+}
+@media screen and (max-width: 800px) {
+  .leaderTitle h1 {
+    font-size: 3rem;
+    line-height: 3rem;
+    margin-top: 1rem;
+    margin-left: 2rem;
+    text-shadow: 1px 1px 0px black;
+  }
+}
 </style>

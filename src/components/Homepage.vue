@@ -25,7 +25,9 @@ import HomepageGrid from "./HomepageGrid.vue"
   margin: 0px;
   font-size: 8rem;
   line-height: 8rem;
-  text-shadow: 2px 2px 0px white;
+  text-shadow: 10px 0px 0px black;
+  color: var(--mainTextColor);
+  letter-spacing: 5px;
 }
 @media screen and (max-width: 800px) {
   .homeTitle h1 {
@@ -33,7 +35,7 @@ import HomepageGrid from "./HomepageGrid.vue"
     line-height: 3rem;
     margin-top: 1rem;
     margin-left: 2rem;
-    text-shadow: 1px 1px 0px white;
+    text-shadow: 1px 1px 0px black;
   }
 }
 </style>
